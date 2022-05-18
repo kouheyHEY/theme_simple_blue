@@ -1,0 +1,13 @@
+* {
+    background-color: #ddffff;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+div,
+nav {
+    border: 2px solid black;
+}
