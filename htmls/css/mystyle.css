@@ -112,7 +112,7 @@ header .navbar {
 }
 
 .header-navbar {
-    width: 1000px;
+    width: 1060px;
     text-align: center;
 }
 
@@ -134,6 +134,8 @@ header .navbar {
 
 /* メインコンテンツ */
 .main-contains {
+    width: 75%;
+    max-width: 860px;
     margin: 5px;
     padding: 5px;
     background-color: burlywood;
@@ -156,13 +158,13 @@ header .navbar {
 }
 
 .main-navbar li {
-    width: 50%;
+    width: 35%;
     height: 100%;
 }
 
 .main-navbar a {
     height: 100%;
-    margin: 0 10px;
+    margin: 0 15px;
     padding: 3px;
     color: #ffffff;
     background-color: #228080;
@@ -181,7 +183,7 @@ header .navbar {
 
 /* 記事一覧 */
 .article-all {
-    padding: 0.5%;
+    padding: 0.5rem 0;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -189,9 +191,12 @@ header .navbar {
 
 /* 記事概要 */
 .article-index {
-    width: 45%;
+    width: ;
     height: auto;
-    margin: 0.5rem 0;
+    margin: 15px;
+    border: #000 solid 1px;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .article-index a {
@@ -201,11 +206,12 @@ header .navbar {
 /* 記事概要 記事画像 */
 .article-index-thumbnail img {
     width: 100%;
-    margin: 0 auto;
+    height: 75%;
 }
 
 /* 記事概要 タイトル */
 .article-index-title {
+    margin: 0;
     color: #000044;
 }
 
