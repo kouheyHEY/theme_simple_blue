@@ -112,7 +112,7 @@ header .navbar {
 }
 
 .header-navbar {
-    width: 1060px;
+    width: 1000px;
     text-align: center;
 }
 
@@ -132,13 +132,22 @@ header .navbar {
     background-color: #ffffff;
 }
 
+/* 表示設定 */
+.contains {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+}
+
 /* メインコンテンツ */
 .main-contains {
-    width: 75%;
-    max-width: 860px;
+    width: 700px;
     margin: 5px;
     padding: 5px;
-    background-color: #eeeeee;
+    background-color: #dddddd;
 }
 
 /* メインコンテンツ ナビゲーションバー */
@@ -167,18 +176,27 @@ header .navbar {
     margin: 0 15px;
     padding: 3px;
     color: #ffffff;
-    background-color: #228080;
+    background-color: #3350b0;
     display: block;
     box-sizing: border-box;
 }
 
 .main-navbar span {
     height: 100%;
-    border: 2px #000033 dashed;
+    border: 2px #ffffff dashed;
     display: block;
     box-sizing: border-box;
 
     line-height: 3rem;
+}
+
+.main-navbar a:hover {
+    color: #3350b0;
+    background-color: #ffffff;
+}
+
+.main-navbar a:hover span {
+    border-color: #3350b0;
 }
 
 /* 記事一覧 */
@@ -191,11 +209,11 @@ header .navbar {
 
 /* 記事概要 */
 .article-index {
-    width: 360px;
+    width: 310px;
     height: auto;
     margin: 15px;
-    border: #000 solid 1px;
-    border-radius: 4px;
+    background-color: #aaaaaa;
+    border: 1px solid #000;
     box-sizing: border-box;
 }
 
@@ -233,6 +251,114 @@ header .navbar {
 /* 記事概要 カテゴリ */
 .article-index-category {
     opacity: 0.5;
+}
+
+/* サイドバー */
+.side-bar {
+    width: 280px;
+    margin: 5px;
+    background-color: #dddddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-content-title {
+    height: 2rem;
+    margin: 5px;
+    padding-left: 5px;
+    line-height: 2rem;
+    font-weight: bold;
+
+    border: 1px solid #000033;
+}
+
+/* サイドバー プロフィール */
+.side-profile {
+    margin: 5px;
+    background-color: #cccccc;
+}
+
+.side-profile img {
+    width: 240px;
+    height: 240px;
+}
+
+.side-profile-abstract {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* サイドバー カテゴリー一覧 */
+.category-list {
+    height: auto;
+    margin: 5px;
+    background-color: #cccccc;
+}
+
+.navbar-category {
+    margin: 5px;
+}
+
+.navbar-category ul {
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    list-style: none;
+}
+
+.navbar-category li {
+    height: 3rem;
+}
+
+.navbar-category a {
+    height: 100%;
+    display: block;
+    line-height: 3rem;
+    /* font-weight: bold; */
+}
+
+/* サイドバー ブログ内検索 */
+
+.side-search {
+    margin: 5px;
+    background-color: #cccccc;
+}
+
+.side-search div {}
+
+.side-search form {
+    height: 2rem;
+    margin: 5px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.side-search input[type="text"] {
+    width: 260px;
+    height: 2rem;
+    position: absolute;
+    left: 0;
+    top: 0;
+    outline: 0;
+}
+
+.side-search button {
+    height: 2rem;
+    position: absolute;
+    left: 230px;
+    top: 0;
+}
+
+/* サイドバー アーカイブ */
+.side-archive {
+    margin: 5px;
+    background-color: #cccccc;
+}
+
+/* サイドバー 新着記事 */
+.side-new-article {
+    margin: 5px;
+    background-color: #cccccc;
 }
 
 /* フッター タイトル */
