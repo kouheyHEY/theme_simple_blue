@@ -138,7 +138,7 @@ header .navbar {
     max-width: 860px;
     margin: 5px;
     padding: 5px;
-    background-color: burlywood;
+    background-color: #eeeeee;
 }
 
 /* メインコンテンツ ナビゲーションバー */
@@ -185,13 +185,13 @@ header .navbar {
 .article-all {
     padding: 0.5rem 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
 /* 記事概要 */
 .article-index {
-    width: ;
+    width: 360px;
     height: auto;
     margin: 15px;
     border: #000 solid 1px;
@@ -213,6 +213,15 @@ header .navbar {
 .article-index-title {
     margin: 0;
     color: #000044;
+}
+
+/* 記事概要 記事情報 */
+.article-index .abstract {
+    margin: 5px 0;
+}
+
+.article-index .abstract * {
+    margin: 5px;
 }
 
 /* 記事概要 投稿日時 */
