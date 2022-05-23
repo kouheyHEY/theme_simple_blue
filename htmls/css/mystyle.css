@@ -408,11 +408,20 @@ header .navbar {
 /* フッター 共通設定 */
 footer {
     background-color: #000033;
+    color: #ffffff;
 }
 
+
 /* フッター タイトル */
+.footer-title {
+    padding: 5px;
+}
+
 .footer-title a {
+    width: 200px;
+    margin: 0 auto;
     text-align: center;
+    display: block;
 }
 
 .footer-title span {
