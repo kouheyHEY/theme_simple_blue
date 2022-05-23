@@ -60,6 +60,7 @@ body * {
 /* タイトル 共通 */
 .title {
     font-family: 'makinas';
+    color: #000033;
 }
 
 /* ナビゲーションバー 共通 */
@@ -213,7 +214,7 @@ header .navbar {
     height: auto;
     margin: 15px;
     background-color: #aaaaaa;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
     box-sizing: border-box;
 }
 
@@ -275,6 +276,7 @@ header .navbar {
 /* サイドバー プロフィール */
 .side-profile {
     margin: 5px;
+    padding: 5px;
     background-color: #cccccc;
 }
 
@@ -396,17 +398,25 @@ header .navbar {
 .side-content-block {
     margin: 5px;
     display: flex;
-
 }
 
-.side-content-img {
+.side-content-date .side-content-img {
     width: 75px;
     height: 75px;
 }
 
+/* フッター 共通設定 */
+footer {
+    background-color: #000033;
+}
+
 /* フッター タイトル */
-.footer-title {
+.footer-title a {
     text-align: center;
+}
+
+.footer-title span {
+    color: #ffffff;
 }
 
 /* フッター アイコン一覧 */
