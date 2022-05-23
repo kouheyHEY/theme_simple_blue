@@ -317,6 +317,26 @@ header .navbar {
     /* font-weight: bold; */
 }
 
+.category-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.category-arrow-wrap {
+    width: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.category-arrow {
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #000000;
+    border-top: 2px solid #000000;
+    transform: rotate(45deg);
+}
+
 /* サイドバー ブログ内検索 */
 
 .side-search {
@@ -329,7 +349,7 @@ header .navbar {
 .side-search form {
     height: 2rem;
     margin: 5px;
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
 }
 
@@ -353,6 +373,11 @@ header .navbar {
 .side-archive {
     margin: 5px;
     background-color: #cccccc;
+}
+
+.side-archive form {
+    width: 100%;
+    margin: 5px;
 }
 
 /* サイドバー 新着記事 */
