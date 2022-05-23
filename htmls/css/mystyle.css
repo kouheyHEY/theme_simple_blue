@@ -378,12 +378,25 @@ header .navbar {
 .side-archive form {
     width: 100%;
     margin: 5px;
+    margin-top: 10px;
+}
+
+.side-archive select{
+    width: 260px;
+    height: 2rem;
+    outline: 0;
 }
 
 /* サイドバー 新着記事 */
 .side-new-article {
     margin: 5px;
     background-color: #cccccc;
+}
+
+.side-content-block{
+    margin: 5px;
+    display: flex;
+    
 }
 
 /* フッター タイトル */
