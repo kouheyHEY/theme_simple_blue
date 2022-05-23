@@ -381,7 +381,7 @@ header .navbar {
     margin-top: 10px;
 }
 
-.side-archive select{
+.side-archive select {
     width: 260px;
     height: 2rem;
     outline: 0;
@@ -393,10 +393,15 @@ header .navbar {
     background-color: #cccccc;
 }
 
-.side-content-block{
+.side-content-block {
     margin: 5px;
     display: flex;
-    
+
+}
+
+.side-content-img {
+    width: 75px;
+    height: 75px;
 }
 
 /* フッター タイトル */
