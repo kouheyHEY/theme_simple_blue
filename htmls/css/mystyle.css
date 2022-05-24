@@ -587,7 +587,7 @@ footer {
 
     .main-navbar a {
         height: 100%;
-        margin: 0 15px;
+        margin: 0 10px;
         padding: 3px;
         color: #ffffff;
         background-color: #0050dd;
@@ -1010,7 +1010,7 @@ footer {
 
     .main-navbar a {
         height: 100%;
-        margin: 0 15px;
+        margin: 0 10px;
         padding: 3px;
         color: #ffffff;
         background-color: #0050dd;
@@ -1292,4 +1292,82 @@ footer {
         box-sizing: border-box;
     }
 
+    .main-navbar a {
+        height: 100%;
+        margin: 0 5px;
+        padding: 3px;
+        color: #ffffff;
+        background-color: #0050dd;
+        display: block;
+        box-sizing: border-box;
+    }
+
+    /* フッター 共通設定 */
+    footer {
+        background-color: #191970;
+        color: #ffffff;
+        display: flex;
+    }
+
+    .footer-info-area {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    /* フッター タイトル */
+    .footer-title {
+        padding: 10px;
+    }
+
+    .footer-title a {
+        width: 400px;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+    }
+
+    .footer-title span {
+        font-size: 1remupdate html;
+    }
+
+    .footer-title span {
+        color: #ffffff;
+    }
+
+    /* フッター リンクリスト */
+    .footer-link-list {
+        width: 180px;
+        margin: 10px auto;
+    }
+
+    .footer-link-list a {
+        color: #ffffff;
+    }
+
+    .footer-siteMap {
+        width: 85px;
+        padding: 0 10px;
+        border-right: 1px solid #ffffff;
+        box-sizing: border-box;
+    }
+
+    .footer-contact {
+        width: 85px;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    /* フッター アイコン一覧 */
+    .footer-icon-list {
+        width: 320px;
+        margin: 20px auto 10px;
+    }
+
+    /* フッター コピーライト */
+    .footer-copyright {
+        width: 375px;
+        margin: 30px auto 10px;
+        text-align: center;
+        font-size: 0.8em;
+    }
 }
