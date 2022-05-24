@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/mystyle.css">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/index.js"></script>
 </head>
 
 <body>
@@ -99,6 +100,15 @@
             </div>
         </div>
         <div class="side-bar">
+            <div class="side-search phone">
+                <div class="side-content-title">ブログ内検索</div>
+                <div class="side-search-bar">
+                    <form action="#" method="get">
+                        <input type="text" placeholder="キーワードを入力...">
+                        <button type="submit">検索</button>
+                    </form>
+                </div>
+            </div>
             <div class="side-profile">
                 <img src="img/profile.png" alt="プロフィール画像">
                 <div class="side-profile-abstract">25歳元システムエンジニア。フルスタックエンジニアを目指して日々勉強中。</div>
@@ -144,7 +154,7 @@
                     </div>
                 </nav>
             </div>
-            <div class="side-search">
+            <div class="side-search desktop">
                 <div class="side-content-title">ブログ内検索</div>
                 <div>
                     <form action="#" method="get">
@@ -155,12 +165,14 @@
             </div>
             <div class="side-archive">
                 <div class="side-content-title">アーカイブ</div>
-                <form action="#" method="get">
-                    <select name="archive-select-form">
-                        <option value="0000_00">月を選択</option>
-                        <option value="2022_05">2022年5月</option>
-                    </select>
-                </form>
+                <div class="side-archive-bar">
+                    <form action="#" method="get">
+                        <select name="archive-select-form">
+                            <option value="0000_00">月を選択</option>
+                            <option value="2022_05">2022年5月</option>
+                        </select>
+                    </form>
+                </div>
             </div>
             <div class="side-new-article">
                 <div class="side-content-title">新着記事</div>
@@ -169,8 +181,8 @@
                         <img src="img/thumbnail1.png" alt="記事画像1">
                     </div>
                     <div class="side-content-abstract">
-                        <div class="side-content-article-title">タイトル1</div>
                         <span class="side-content-category">カテゴリ1</span>
+                        <div class="side-content-article-title">タイトル1タイトル1タイトル1タイトル1</div>
                     </div>
                 </div>
                 <div class="side-content-block">
@@ -178,12 +190,17 @@
                         <img src="img/thumbnail2.png" alt="記事画像2">
                     </div>
                     <div class="side-content-abstract">
-                        <div class="side-content-article-title">タイトル2</div>
                         <span class="side-content-category">カテゴリ2</span>
+                        <div class="side-content-article-title">タイトル2</div>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
+    <div class="gotoTop">
+        <a href="#" id="topButton">
+            <div></div>
+        </a>
     </div>
     <footer>
         <div class="footer-info-area">
@@ -192,23 +209,27 @@
                     <span class="title">元エンジニア、休憩中</span>
                 </a>
             </div>
-            <nav class="navbar">
+            <nav class="navbar footer-link-list">
                 <div>
                     <ul>
-                        <li>
-                            <div class="footer-siteMap">
-                                サイトマップ
-                            </div>
+                        <li class="footer-siteMap">
+                            <a href="#">
+                                <div>
+                                    サイトマップ
+                                </div>
+                            </a>
                         </li>
-                        <li>
-                            <div class="footer-contact">
-                                お問い合わせ
-                            </div>
+                        <li class="footer-contact">
+                            <a href="#">
+                                <div>
+                                    お問い合わせ
+                                </div>
+                            </a>
                         </li>
                     </ul>
                 </div>
             </nav>
-            <nav class="navbar">
+            <nav class="navbar footer-icon-list">
                 <div>
                     <ul>
                         <li>
@@ -224,9 +245,8 @@
                     </ul>
                 </div>
             </nav>
+            <div class="footer-copyright">&copy; 2022 エンジニア、休憩中 All Rights Reserved.</div>
         </div>
-        <div class="footer-copyright">&copy; 2022- All rights reserved.</div>
-        <div class="footer-gotoTop">▲</div>
     </footer>
 </body>
 
