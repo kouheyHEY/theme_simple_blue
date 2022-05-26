@@ -18,6 +18,7 @@
 */
 
 /* 全タグ共通設定 */
+
 body {
     padding: 0;
     margin: 0;
@@ -25,6 +26,10 @@ body {
 }
 
 .phone {
+    display: none;
+}
+
+#menu-btn-check {
     display: none;
 }
 
@@ -81,7 +86,8 @@ body * {
 /* ヘッダー タイトル */
 .header-title {
     width: 960px;
-    margin: 10px auto;
+    margin: 0 auto;
+    padding: 10px 0;
     text-align: center;
 }
 
@@ -134,8 +140,7 @@ header .navbar {
 /* 表示設定 */
 .contains {
     width: 960px;
-    /* height: auto; */
-    height: 5000px;
+    height: auto;
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
@@ -173,7 +178,7 @@ header .navbar {
 
 .main-navbar a {
     height: 100%;
-    margin: 0 15px;
+    margin: 10px 15px 5px;
     padding: 3px;
     color: #ffffff;
     background-color: #0050dd;
@@ -201,7 +206,7 @@ header .navbar {
 
 /* 記事一覧 */
 .article-all {
-    padding: 0.5rem 0;
+    padding: 0;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -426,6 +431,7 @@ footer {
     background-color: #191970;
     color: #ffffff;
     display: flex;
+    flex-direction: column;
 }
 
 .footer-info-area {
@@ -570,7 +576,6 @@ footer {
     .contains {
         width: 768px;
         /* height: auto; */
-        height: 5000px;
         margin: 0 auto;
         padding: 0;
         box-sizing: border-box;
@@ -587,7 +592,7 @@ footer {
 
     .main-navbar a {
         height: 100%;
-        margin: 0 10px;
+        margin: 5px 10px;
         padding: 3px;
         color: #ffffff;
         background-color: #0050dd;
@@ -615,7 +620,7 @@ footer {
 
     /* 記事一覧 */
     .article-all {
-        padding: 0.5rem 0;
+        padding: 0;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -853,7 +858,7 @@ footer {
     }
 
     .footer-info-area {
-        width: 960px;
+        width: 100%;
         margin: 0 auto;
     }
 
@@ -947,6 +952,7 @@ footer {
 
     .header-title {
         width: 320px;
+        height: 5rem;
     }
 
     .header-title .title {
@@ -962,38 +968,116 @@ footer {
     /* ヘッダー ナビゲーションバー */
     header .navbar {
         width: 100%;
-        height: 2rem;
+        height: 0;
         background-color: #191970;
         box-sizing: border-box;
     }
 
     .header-navbar {
-        width: 768px;
+        width: 100%;
+        min-width: 360px;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 100%;
         text-align: center;
+        z-index: 80;
+        transition: all 0.5s;
+        background-color: #191970;
+        opacity: 0.95;
+    }
+
+    .header-navbar ul {
+        padding: 60px 10px 15px;
+        flex-direction: column;
     }
 
     .header-navbar ul li {
-        width: 25%;
-        line-height: 2rem;
+        width: 100%;
+        line-height: 1.5rem;
+        border-bottom: 1px solid #ffffff;
     }
 
     .header-navbar a {
+        width: 100%;
+        padding: 10px 5px;
         color: #ffffff;
         font-size: 1.5rem;
         display: block;
+        box-sizing: border-box;
+        position: relative;
+        text-align: left;
     }
 
-    .header-navbar a:hover {
-        color: #191970;
+    .header-navbar a::before {
+        width: 7px;
+        height: 7px;
+        border-top: solid 2px #ffffff;
+        border-right: solid 2px #ffffff;
+        transform: rotate(45deg);
+        content: "";
+        position: absolute;
+        right: 11px;
+        top: 16px;
+    }
+
+    .menu-btn {
+        position: fixed;
+        top: 0;
+        right: 0;
+        display: flex;
+        height: 50px;
+        width: 50px;
+        justify-content: center;
+        align-items: center;
+        z-index: 90;
+        background-color: #191970;
+        opacity: 0.95;
+    }
+
+    .menu-btn span,
+    .menu-btn span:before,
+    .menu-btn span:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 22px;
         background-color: #ffffff;
+        position: absolute;
+        opacity: 0.9;
+    }
+
+    .menu-btn span:before {
+        bottom: 8px;
+    }
+
+    .menu-btn span:after {
+        top: 8px;
+    }
+
+    #menu-btn-check:checked~.menu-btn span {
+        background-color: rgba(255, 255, 255, 0);
+    }
+
+    #menu-btn-check:checked~.menu-btn span::before {
+        bottom: 0;
+        transform: rotate(45deg);
+    }
+
+    #menu-btn-check:checked~.menu-btn span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+
+    #menu-btn-check:checked~.header-navbar {
+        left: 0;
     }
 
 
     /* 表示設定 */
     .contains {
         width: 100%;
-        /* height: auto; */
-        height: 3000px;
+        height: auto;
         margin: 0 auto;
         padding: 0;
         box-sizing: border-box;
@@ -1002,15 +1086,16 @@ footer {
 
     /* メインコンテンツ */
     .main-contains {
-        width: 100%;
+        width: auto;
         margin: 5px;
         padding: 5px;
         background-color: #dddddd;
+        box-sizing: border-box;
     }
 
     .main-navbar a {
         height: 100%;
-        margin: 0 10px;
+        margin: 5px 10px;
         padding: 3px;
         color: #ffffff;
         background-color: #0050dd;
@@ -1038,7 +1123,7 @@ footer {
 
     /* 記事一覧 */
     .article-all {
-        padding: 0.5rem 0;
+        padding: 0;
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
@@ -1070,14 +1155,14 @@ footer {
         color: #000044;
     }
 
-
     /* サイドバー */
     .side-bar {
-        width: 100%;
+        width: auto;
         margin: 5px;
         background-color: #dddddd;
         display: flex;
         flex-direction: column;
+        box-sizing: border-box;
     }
 
     .side-content-title {
@@ -1249,6 +1334,12 @@ footer {
         height: 75px;
     }
 
+    .footer-title a {
+        width: 280px;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -1256,8 +1347,16 @@ footer {
         font-size: 0.5rem;
     }
 
+    header {
+        min-width: 350px;
+        /* height: 2rem; */
+    }
+
     .header-title {
         width: 240px;
+        height: 3rem;
+        margin-left: 10px;
+        margin-right: auto;
     }
 
     .header-title .title {
@@ -1265,17 +1364,19 @@ footer {
     }
 
     .header-title .title-explanation {
-        opacity: 0.6;
-        font-size: 0.5rem;
-        display: block;
+        display: none;
+    }
+
+    .menu-btn {
+        width: 3rem;
+        height: 3rem;
     }
 
     /* 表示設定 */
     .contains {
         width: 100%;
-        min-width: 375px;
+        min-width: 350px;
         /* height: auto; */
-        height: 3000px;
         margin: 0 auto;
         padding: 0;
         box-sizing: border-box;
@@ -1294,7 +1395,7 @@ footer {
 
     .main-navbar a {
         height: 100%;
-        margin: 0 5px;
+        margin: 5px;
         padding: 3px;
         color: #ffffff;
         background-color: #0050dd;
@@ -1302,15 +1403,34 @@ footer {
         box-sizing: border-box;
     }
 
+    .main-navbar span {
+        height: 100%;
+        border: 2px #ffffff dashed;
+        display: block;
+        box-sizing: border-box;
+
+        line-height: 2rem;
+    }
+
+    /* 記事概要 タイトル */
+    .article-index-title {
+        margin: 0;
+        color: #000044;
+        font-size: 1rem;
+    }
+
     /* フッター 共通設定 */
     footer {
+        width: 100%;
+        min-width: 350px;
         background-color: #191970;
         color: #ffffff;
         display: flex;
     }
 
     .footer-info-area {
-        width: 960px;
+        width: 100%;
+        /* min-width: 360px; */
         margin: 0 auto;
     }
 
@@ -1320,17 +1440,14 @@ footer {
     }
 
     .footer-title a {
-        width: 400px;
+        width: 220px;
         margin: 0 auto;
         text-align: center;
         display: block;
     }
 
     .footer-title span {
-        font-size: 1remupdate html;
-    }
-
-    .footer-title span {
+        font-size: 1.25rem;
         color: #ffffff;
     }
 
@@ -1365,7 +1482,7 @@ footer {
 
     /* フッター コピーライト */
     .footer-copyright {
-        width: 375px;
+        width: 350px;
         margin: 30px auto 10px;
         text-align: center;
         font-size: 0.8em;
