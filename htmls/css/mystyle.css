@@ -97,8 +97,7 @@ body * {
 
 .header-title .title {
     font-size: 4rem;
-    /* font-weight: bold; */
-
+    font-weight: bold;
     display: block;
 }
 
@@ -229,7 +228,8 @@ header .navbar {
 /* 記事概要 記事画像 */
 .article-index-thumbnail img {
     width: 100%;
-    height: 75%;
+    height: auto;
+    object-fit: cover;
 }
 
 /* 記事概要 タイトル */
@@ -285,11 +285,14 @@ header .navbar {
 }
 
 .side-profile img {
-    width: 240px;
-    height: 240px;
+    width: 120px;
+    height: 120px;
+    margin: 5px auto 10px;
+    display: block;
 }
 
 .side-profile-abstract {
+    margin: 5px;
     font-size: 0.8rem;
     text-align: center;
 }
@@ -416,14 +419,24 @@ header .navbar {
     font-size: 0.5rem;
 }
 
-.side-content-article-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
 .side-content-img {
     width: 75px;
     height: 75px;
+}
+
+.side-content-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side-content-article-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.side-content-abstract {
+    width: calc(100% - 75px);
 }
 
 /* フッター 共通設定 */
@@ -699,8 +712,8 @@ footer {
     }
 
     .side-profile img {
-        width: 360px;
-        height: 360px;
+        width: 120px;
+        height: 120px;
     }
 
     .side-profile-abstract {
@@ -975,7 +988,7 @@ footer {
 
     .header-navbar {
         width: 100%;
-        min-width: 360px;
+        min-width: 320px;
         height: 100%;
         position: fixed;
         top: 0;
@@ -1019,6 +1032,11 @@ footer {
         position: absolute;
         right: 11px;
         top: 16px;
+    }
+
+    .header-navbar a:hover::before {
+        border-top: solid 2px #191970;
+        border-right: solid 2px #191970;
     }
 
     .menu-btn {
@@ -1348,7 +1366,7 @@ footer {
     }
 
     header {
-        min-width: 350px;
+        min-width: 320px;
         /* height: 2rem; */
     }
 
@@ -1375,7 +1393,7 @@ footer {
     /* 表示設定 */
     .contains {
         width: 100%;
-        min-width: 350px;
+        min-width: 320px;
         /* height: auto; */
         margin: 0 auto;
         padding: 0;
@@ -1422,7 +1440,7 @@ footer {
     /* フッター 共通設定 */
     footer {
         width: 100%;
-        min-width: 350px;
+        min-width: 320px;
         background-color: #191970;
         color: #ffffff;
         display: flex;
@@ -1482,7 +1500,7 @@ footer {
 
     /* フッター コピーライト */
     .footer-copyright {
-        width: 350px;
+        width: 320px;
         margin: 30px auto 10px;
         text-align: center;
         font-size: 0.8em;
