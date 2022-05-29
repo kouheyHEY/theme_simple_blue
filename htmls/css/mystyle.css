@@ -23,6 +23,8 @@ body {
     padding: 0;
     margin: 0;
     background-color: #ffffff;
+
+    background-image: url("../img/background.gif");
 }
 
 .phone {
@@ -149,9 +151,9 @@ header .navbar {
 /* メインコンテンツ */
 .main-contains {
     width: 660px;
-    margin: 5px;
-    padding: 5px;
-    background-color: #dddddd;
+    padding: 10px;
+    /* background-color: #dddddd; */
+    box-sizing: border-box;
 }
 
 /* メインコンテンツ ナビゲーションバー */
@@ -177,7 +179,7 @@ header .navbar {
 
 .main-navbar a {
     height: 100%;
-    margin: 10px 15px 5px;
+    margin: 10px 10px 5px;
     padding: 3px;
     color: #ffffff;
     background-color: #0050dd;
@@ -205,9 +207,9 @@ header .navbar {
 
 /* 記事一覧 */
 .article-all {
-    padding: 0;
+    padding: 10px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 
@@ -215,14 +217,13 @@ header .navbar {
 .article-index {
     width: 295px;
     height: auto;
-    margin: 15px;
-    background-color: #aaaaaa;
-    /* border: 1px solid #000; */
+    padding: 10px 0;
     box-sizing: border-box;
 }
 
 .article-index a {
     display: block;
+    background-color: #aaaaaa;
 }
 
 /* 記事概要 記事画像 */
@@ -240,7 +241,7 @@ header .navbar {
 
 /* 記事概要 記事情報 */
 .article-index .abstract {
-    margin: 5px 0;
+    padding-bottom: 5px;
 }
 
 .article-index .abstract * {
@@ -261,8 +262,8 @@ header .navbar {
 /* サイドバー */
 .side-bar {
     width: 280px;
-    margin: 5px;
-    background-color: #dddddd;
+    margin: 5px 10px;
+    /* background-color: #dddddd; */
     display: flex;
     flex-direction: column;
 }
@@ -281,7 +282,7 @@ header .navbar {
 .side-profile {
     margin: 5px;
     padding: 5px;
-    background-color: #cccccc;
+    /* background-color: #cccccc; */
 }
 
 .side-profile img {
@@ -301,11 +302,11 @@ header .navbar {
 .category-list {
     height: auto;
     margin: 5px;
-    background-color: #cccccc;
+    /* background-color: #cccccc; */
 }
 
 .navbar-category {
-    margin: 5px;
+    padding: 5px 10px;
 }
 
 .navbar-category ul {
@@ -350,7 +351,7 @@ header .navbar {
 
 .side-search {
     margin: 5px;
-    background-color: #cccccc;
+    /* background-color: #cccccc; */
 }
 
 .side-search form {
@@ -379,7 +380,7 @@ header .navbar {
 /* サイドバー アーカイブ */
 .side-archive {
     margin: 5px;
-    background-color: #cccccc;
+    /* background-color: #cccccc; */
 }
 
 .side-archive form {
@@ -401,17 +402,18 @@ header .navbar {
 /* サイドバー 新着記事 */
 .side-new-article {
     margin: 5px;
-    background-color: #cccccc;
+    /* background-color: #cccccc; */
 }
 
 .side-content-list {
-    margin: 5px;
+    padding: 5px 10px;
     display: flex;
     flex-direction: column;
 }
 
 .side-content-block {
     margin: 5px;
+    margin-left: 0;
     display: flex;
 }
 
@@ -591,16 +593,15 @@ footer {
         /* height: auto; */
         margin: 0 auto;
         padding: 0;
-        box-sizing: border-box;
         display: block;
+        box-sizing: border-box;
     }
 
     /* メインコンテンツ */
     .main-contains {
         width: 100%;
-        margin: 5px;
-        padding: 5px;
-        background-color: #dddddd;
+        padding: 10px;
+        box-sizing: border-box;
     }
 
     .main-navbar a {
@@ -635,7 +636,7 @@ footer {
     .article-all {
         padding: 0;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
 
@@ -643,14 +644,8 @@ footer {
     .article-index {
         width: calc(50% - 20px);
         height: auto;
-        margin: 10px;
-        background-color: #aaaaaa;
-        /* border: 1px solid #000; */
+        padding: 10px;
         box-sizing: border-box;
-    }
-
-    .article-index a {
-        display: block;
     }
 
     /* 記事概要 記事画像 */
@@ -688,8 +683,8 @@ footer {
     /* サイドバー */
     .side-bar {
         width: 768px;
-        margin: 5px;
-        background-color: #dddddd;
+        margin: 0;
+        padding: 5px;
         display: flex;
         flex-direction: column;
     }
@@ -708,12 +703,6 @@ footer {
     .side-profile {
         margin: 5px;
         padding: 5px;
-        background-color: #cccccc;
-    }
-
-    .side-profile img {
-        width: 120px;
-        height: 120px;
     }
 
     .side-profile-abstract {
@@ -724,12 +713,12 @@ footer {
     /* サイドバー カテゴリー一覧 */
     .category-list {
         height: auto;
-        margin: 5px;
-        background-color: #cccccc;
+        margin: 0;
+        padding: 5px;
     }
 
     .navbar-category {
-        margin: 5px;
+        padding: 5px 10px;
     }
 
     .navbar-category ul {
@@ -773,7 +762,6 @@ footer {
     /* サイドバー ブログ内検索 */
     .side-search {
         margin: 5px;
-        background-color: #cccccc;
     }
 
     .side-search-bar {
@@ -806,7 +794,6 @@ footer {
     /* サイドバー アーカイブ */
     .side-archive {
         margin: 5px;
-        background-color: #cccccc;
     }
 
     .side-archive-bar {
@@ -833,20 +820,20 @@ footer {
     /* サイドバー 新着記事 */
     .side-new-article {
         margin: 5px;
-        background-color: #cccccc;
     }
 
     .side-content-list {
-        margin: 5px;
         display: flex;
         flex-direction: row;
     }
 
     .side-content-block {
         width: 50%;
-        margin: 5px;
-        padding: 5px;
         display: flex;
+    }
+
+    .side-content-abstract {
+        padding: 0 5px;
     }
 
     .side-content-category {
@@ -1107,13 +1094,12 @@ footer {
         width: auto;
         margin: 5px;
         padding: 5px;
-        background-color: #dddddd;
         box-sizing: border-box;
     }
 
     .main-navbar a {
         height: 100%;
-        margin: 5px 10px;
+        margin: 5px 10px 10px;
         padding: 3px;
         color: #ffffff;
         background-color: #0050dd;
@@ -1151,14 +1137,13 @@ footer {
     .article-index {
         width: 100%;
         height: auto;
-        margin: 10px;
-        background-color: #aaaaaa;
-        /* border: 1px solid #000; */
-        box-sizing: border-box;
-    }
+        margin: 0 5px;
+        padding: 10px 5px;
+        padding-bottom: 5px;
 
-    .article-index a {
-        display: block;
+        border-top: 2px dashed #000033;
+
+        box-sizing: border-box;
     }
 
     /* 記事概要 記事画像 */
@@ -1176,8 +1161,8 @@ footer {
     /* サイドバー */
     .side-bar {
         width: auto;
-        margin: 5px;
-        background-color: #dddddd;
+        margin: 0;
+        padding: 5px;
         display: flex;
         flex-direction: column;
         box-sizing: border-box;
@@ -1191,34 +1176,6 @@ footer {
         font-weight: bold;
 
         border: 1px solid #000033;
-    }
-
-    /* サイドバー プロフィール */
-    .side-profile {
-        margin: 5px;
-        padding: 5px;
-        background-color: #cccccc;
-    }
-
-    .side-profile img {
-        width: 360px;
-        height: 360px;
-    }
-
-    .side-profile-abstract {
-        font-size: 0.8rem;
-        text-align: center;
-    }
-
-    /* サイドバー カテゴリー一覧 */
-    .category-list {
-        height: auto;
-        margin: 5px;
-        background-color: #cccccc;
-    }
-
-    .navbar-category {
-        margin: 5px;
     }
 
     .navbar-category ul {
@@ -1262,7 +1219,6 @@ footer {
     /* サイドバー ブログ内検索 */
     .side-search {
         margin: 5px;
-        background-color: #cccccc;
     }
 
     .side-search-bar {
@@ -1295,7 +1251,6 @@ footer {
     /* サイドバー アーカイブ */
     .side-archive {
         margin: 5px;
-        background-color: #cccccc;
     }
 
     .side-archive-bar {
@@ -1322,19 +1277,15 @@ footer {
     /* サイドバー 新着記事 */
     .side-new-article {
         margin: 5px;
-        background-color: #cccccc;
     }
 
     .side-content-list {
-        margin: 5px;
         display: flex;
         flex-direction: column;
     }
 
     .side-content-block {
         width: 100%;
-        margin: 5px;
-        padding: 5px;
         display: flex;
     }
 
@@ -1394,26 +1345,16 @@ footer {
     .contains {
         width: 100%;
         min-width: 320px;
-        /* height: auto; */
         margin: 0 auto;
         padding: 0;
         box-sizing: border-box;
         display: block;
     }
 
-    /* 記事概要 */
-    .article-index {
-        width: 100%;
-        height: auto;
-        margin: 5px;
-        background-color: #aaaaaa;
-        /* border: 1px solid #000; */
-        box-sizing: border-box;
-    }
-
     .main-navbar a {
         height: 100%;
-        margin: 5px;
+        margin: 5px 10px;
+        margin-bottom: 10px;
         padding: 3px;
         color: #ffffff;
         background-color: #0050dd;
@@ -1428,6 +1369,15 @@ footer {
         box-sizing: border-box;
 
         line-height: 2rem;
+    }
+
+    /* 記事概要 */
+    .article-index {
+        width: 100%;
+        height: auto;
+        margin: 0 5px;
+        padding: 10px 5px 5px;
+        box-sizing: border-box;
     }
 
     /* 記事概要 タイトル */
