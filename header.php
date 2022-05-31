@@ -27,7 +27,6 @@
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
                     <li><a href="#">WORKS</a></li>
-                    <li><a href="#">SEARCH</a></li>
                 </ul>
             </div>
         </nav>
