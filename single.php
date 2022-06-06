@@ -5,10 +5,10 @@
                 <?php 
                     if ( have_posts() ) :
                         while ( have_posts() ) : the_post();
-                ?> 
+                ?>
                         <div class="content-title"><?php the_title(); ?></div>
                         <section class="content-detail">
-                            <?php the_content(); ?>
+                            記事内容です<br/><?php the_content(); ?>
                         </section>
                 <?php 
                     endwhile;

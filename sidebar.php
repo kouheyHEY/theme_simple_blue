@@ -1,6 +1,6 @@
         <div class="side-bar">
-            <div class="side-search">
-                <div class="side-content-title">ブログ内検索</div>
+            <div class="side-search content-block-area">
+                <div class="content-title">ブログ内検索</div>
                 <div class="side-search-bar">
                     <form action="#" method="get">
                         <input type="text" placeholder="キーワードを入力...">
@@ -8,12 +8,12 @@
                     </form>
                 </div>
             </div>
-            <div class="side-profile">
+            <div class="side-profile content-block-area">
                 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/プロフィールテスト.png" alt="プロフィール画像">
                 <div class="side-profile-abstract">25歳元システムエンジニア。フルスタックエンジニアを目指して日々勉強中。</div>
             </div>
-            <div class="category-list">
-                <div class="side-content-title">カテゴリー</div>
+            <div class="category-list content-block-area">
+                <div class="content-title">カテゴリー</div>
                 <nav class="navbar-category">
                     <div>
                         <ul>
@@ -51,8 +51,8 @@
                     </div>
                 </nav>
             </div>
-            <div class="side-archive">
-                <div class="side-content-title">アーカイブ</div>
+            <div class="side-archive content-block-area">
+                <div class="content-title">アーカイブ</div>
                 <div class="side-archive-bar">
                     <form action="#" method="get">
                         <select name="archive-select-form">
@@ -62,8 +62,8 @@
                     </form>
                 </div>
             </div>
-            <div class="side-new-article">
-                <div class="side-content-title">新着記事</div>
+            <div class="side-new-article content-block-area">
+                <div class="content-title">新着記事</div>
                 <div class="side-content-list">
                     <a href="#" class="side-content-block">
                         <div class="side-content-img">
