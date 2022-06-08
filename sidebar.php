@@ -66,18 +66,12 @@
                 <div class="content-title">新着記事</div>
                 <div class="side-content-list">
                     <a href="#" class="side-content-block">
-                        <div class="side-content-img">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/アイキャッチテスト.png" alt="記事画像1">
-                        </div>
                         <div class="side-content-abstract">
                             <span class="side-content-category">カテゴリ1</span>
                             <div class="side-content-article-title">タイトル1タイトル1タイトル1タイトル1</div>
                         </div>
                     </a>
                     <a href="#" class="side-content-block">
-                        <div class="side-content-img">
-                            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/アイキャッチテスト.png" alt="記事画像2">
-                        </div>
                         <div class="side-content-abstract">
                             <span class="side-content-category">カテゴリ2</span>
                             <div class="side-content-article-title">タイトル2</div>

@@ -26,7 +26,8 @@
                 <ul>
                     <li><a href="#">HOME</a></li>
                     <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">WORKS</a></li>
+                    <li><a href="#">GAME</a></li>
+                    <li><a href="#">TOOL</a></li>
                 </ul>
             </div>
         </nav>

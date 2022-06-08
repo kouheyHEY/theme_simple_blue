@@ -24,7 +24,7 @@ body {
     margin: 0;
     background-color: #ffffff;
 
-    background-image: url("../img/background.gif");
+    /* background-image: url("../img/background.gif"); */
 }
 
 .phone {
@@ -170,6 +170,11 @@ header .navbar {
     /* border: 1px solid #000033; */
 }
 
+/* メインコンテンツ 投稿ヘッダー */
+.entry-header div {
+    margin-left: 5px;
+}
+
 /* メインコンテンツ コンテンツ内容 */
 .content-detail {
     margin: 5px;
@@ -282,12 +287,18 @@ header .navbar {
 
 /* サイドバー */
 .side-bar {
-    width: 280px;
-    padding: 5px 10px;
+    width: 300px;
+    padding: 10px;
     padding-left: 5px;
     /* background-color: #dddddd; */
     display: flex;
     flex-direction: column;
+}
+
+.side-bar .content-block-area {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
 }
 
 /* コンテンツタイトル */
@@ -309,7 +320,6 @@ header .navbar {
 
 /* サイドバー プロフィール */
 .side-profile {
-    margin: 5px;
     padding: 5px;
     /* background-color: #cccccc; */
 }
@@ -330,7 +340,6 @@ header .navbar {
 /* サイドバー カテゴリー一覧 */
 .category-list {
     height: auto;
-    margin: 5px;
     /* background-color: #cccccc; */
 }
 
@@ -377,10 +386,7 @@ header .navbar {
 }
 
 /* サイドバー ブログ内検索 */
-.side-search {
-    margin: 5px;
-    /* background-color: #cccccc; */
-}
+.side-search {}
 
 .side-search form {
     height: 2rem;
@@ -407,7 +413,6 @@ header .navbar {
 
 /* サイドバー アーカイブ */
 .side-archive {
-    margin: 5px;
     /* background-color: #cccccc; */
 }
 
@@ -429,7 +434,6 @@ header .navbar {
 
 /* サイドバー 新着記事 */
 .side-new-article {
-    margin: 5px;
     /* background-color: #cccccc; */
 }
 
@@ -718,19 +722,17 @@ footer {
         flex-direction: column;
     }
 
-    /* サイドバー プロフィール */
-    .side-profile {
+    .side-bar .content-block-area {
         margin: 5px;
-        padding: 5px;
     }
 
+    /* サイドバー プロフィール */
     .side-profile-abstract {
         font-size: 0.8rem;
         text-align: center;
     }
 
     /* サイドバー カテゴリー一覧 */
-
     .navbar-category {
         padding: 5px 10px;
     }
@@ -774,10 +776,6 @@ footer {
     }
 
     /* サイドバー ブログ内検索 */
-    .side-search {
-        margin: 5px;
-    }
-
     .side-search-bar {
         width: 100%;
         box-sizing: border-box;
@@ -806,10 +804,6 @@ footer {
     }
 
     /* サイドバー アーカイブ */
-    .side-archive {
-        margin: 5px;
-    }
-
     .side-archive-bar {
         width: 100%;
         box-sizing: border-box;
@@ -832,10 +826,6 @@ footer {
     }
 
     /* サイドバー 新着記事 */
-    .side-new-article {
-        margin: 5px;
-    }
-
     .side-content-list {
         display: flex;
         flex-direction: row;
@@ -1397,6 +1387,19 @@ footer {
         margin: 0;
         color: #000044;
         font-size: 1rem;
+    }
+
+    .navbar-category li {
+        height: 2.5rem;
+    }
+
+    .navbar-category a {
+        line-height: 2.5rem;
+    }
+
+    .category-name,
+    .category-name * {
+        font-size: 0.75rem;
     }
 
     /* フッター 共通設定 */
