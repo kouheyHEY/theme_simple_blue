@@ -20,9 +20,13 @@
 /* 全タグ共通設定 */
 
 body {
+    /* 変数設定 */
+    --color-accent: #9EC2C2;
+    --color-base: #F8F4F2;
+    --color-text: #5D4E72;
     padding: 0;
     margin: 0;
-    background-color: #ffffff;
+    background-color: var(--color-base);
 
     /* background-image: url("../img/background.gif"); */
 }
@@ -54,7 +58,7 @@ body {
 /* 文字装飾の初期化 */
 a {
     text-decoration: none;
-    color: black;
+    color: var(--color-text);
 }
 
 body * {
@@ -66,82 +70,6 @@ body * {
 .content-block-area {
     padding: 5px;
     background-color: rgba(0, 255, 255, 0.2)
-}
-
-/* タイトル 共通 */
-.title {
-    font-family: 'makinas';
-    color: #000033;
-}
-
-/* ナビゲーションバー 共通 */
-.navbar * {
-    margin: 0;
-}
-
-.navbar div {
-    margin: 0 auto;
-}
-
-.navbar ul {
-    padding: 0;
-    background-color: transparent;
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-}
-
-/* ヘッダー タイトル */
-.header-title {
-    width: 960px;
-    margin: 0 auto;
-    padding: 10px 0;
-    text-align: center;
-}
-
-.header-title a {
-    display: block;
-}
-
-.header-title .title {
-    font-size: 4rem;
-    font-weight: bold;
-    display: block;
-}
-
-.header-title .title-explanation {
-    opacity: 0.6;
-    font-size: 1rem;
-    display: block;
-}
-
-/* ヘッダー ナビゲーションバー */
-header .navbar {
-    width: 100%;
-    height: 2rem;
-    background-color: #191970;
-    box-sizing: border-box;
-}
-
-.header-navbar {
-    width: 960px;
-    text-align: center;
-}
-
-.header-navbar ul li {
-    width: 33%;
-    line-height: 2rem;
-}
-
-.header-navbar a {
-    color: #ffffff;
-    font-size: 1.5rem;
-    display: block;
-}
-
-.header-navbar a:hover {
-    color: #191970;
-    background-color: #ffffff;
 }
 
 /* 表示設定 */
@@ -473,72 +401,6 @@ header .navbar {
     width: calc(100% - 75px);
 }
 
-/* フッター 共通設定 */
-footer {
-    background-color: #191970;
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-info-area {
-    width: 960px;
-    margin: 0 auto;
-}
-
-/* フッター タイトル */
-.footer-title {
-    padding: 10px;
-}
-
-.footer-title a {
-    width: 400px;
-    margin: 0 auto;
-    font-size: 2rem;
-    text-align: center;
-    display: block;
-}
-
-.footer-title span {
-    color: #ffffff;
-}
-
-/* フッター リンクリスト */
-.footer-link-list {
-    width: 240px;
-    margin: 10px auto;
-}
-
-.footer-link-list a {
-    color: #ffffff;
-}
-
-.footer-siteMap {
-    width: 120px;
-    padding: 0 10px;
-    border-right: 1px solid #ffffff;
-    box-sizing: border-box;
-}
-
-.footer-contact {
-    width: 120px;
-    padding: 0 10px;
-    box-sizing: border-box;
-}
-
-/* フッター アイコン一覧 */
-.footer-icon-list {
-    width: 320px;
-    margin: 20px auto 10px;
-}
-
-/* フッター コピーライト */
-.footer-copyright {
-    width: 400px;
-    margin: 30px auto 10px;
-    text-align: center;
-    font-size: 0.8em;
-}
 
 .gotoTop {
     position: relative;

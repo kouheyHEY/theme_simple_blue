@@ -1,0 +1,66 @@
+/* フッター 共通設定 */
+footer {
+    background-color: #191970;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info-area {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* フッター タイトル */
+.footer-title {
+    padding: 10px;
+}
+
+.footer-title a {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 2rem;
+    text-align: center;
+    display: block;
+}
+
+.footer-title span {
+    color: #ffffff;
+}
+
+/* フッター リンクリスト */
+.footer-link-list {
+    width: 240px;
+    margin: 10px auto;
+}
+
+.footer-link-list a {
+    color: #ffffff;
+}
+
+.footer-siteMap {
+    width: 120px;
+    padding: 0 10px;
+    border-right: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.footer-contact {
+    width: 120px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* フッター アイコン一覧 */
+.footer-icon-list {
+    width: 320px;
+    margin: 20px auto 10px;
+}
+
+/* フッター コピーライト */
+.footer-copyright {
+    width: 400px;
+    margin: 30px auto 10px;
+    text-align: center;
+    font-size: 0.8em;
+}
