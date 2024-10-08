@@ -3,7 +3,7 @@
         <div class="main-content">
             <div class="content-block-area">
                 <div class="content-title">記事一覧</div>
-                <nav class="navbar">
+                <!-- <nav class="navbar">
                     <div class="main-navbar">
                         <ul>
                             <li><a href="new"><span>新着記事</span></a></li>
@@ -11,7 +11,7 @@
                             <li><a href="ranking"><span>ランキング</span></a></li>
                         </ul>
                     </div>
-                </nav>
+                </nav> -->
                 <div class="article-all">
                     <article class="article-index">
                         <a href="#">
