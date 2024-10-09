@@ -26,8 +26,8 @@
     <header>
         <div class="header-title">
             <a href="#">
-                <span class="title">元エンジニア、休憩中</span>
-                <span class="title-explanation">元エンジニア（とその仲間）の創作物や日常を発信するブログです。</span>
+                <span class="title">No Magic, No Life.</br>No Happiness, No Life.</span>
+                <span class="title-explanation">説明説明説明説明説明説明説明説明説明説明説明説明。</span>
             </a>
         </div>
         <nav class="navbar">
