@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/mystyle.css">
     <!-- ヘッダーCSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header.css">
+    <!-- 記事CSS -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/article.css">
     <!-- フッターCSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/footer.css">
     <!-- jQuery -->
@@ -26,7 +28,7 @@
     <header>
         <div class="header-title">
             <a href="#">
-                <span class="title">No Magic, No Life.</br>No Happiness, No Life.</span>
+                <span class="title">No Magic, No Life</span>
                 <span class="title-explanation">説明説明説明説明説明説明説明説明説明説明説明説明。</span>
             </a>
         </div>
@@ -35,7 +37,7 @@
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
             <div class="header-navbar">
                 <ul>
-                    <li><a href="#">New</a></li>
+                    <li><a href="#">Home</a></li>
                     <li class="has-submenu">
                         <a href="#">Lifestyle</a>
                         <ul class="submenu">
@@ -44,20 +46,14 @@
                         </ul>
                     </li>
                     <li class="has-submenu">
-                        <a href="#">Reviews</a>
+                        <a href="#">Review</a>
                         <ul class="submenu">
-                            <li><a href="#">Cosmetics</a></li>
+                            <li><a href="#">Cosmetic</a></li>
                             <li><a href="#">Other</a></li>
                         </ul>
                     </li>
-                    <li class="has-submenu">
-                        <a href="#">Products</a>
-                        <ul class="submenu">
-                            <li><a href="#">Games</a></li>
-                            <li><a href="#">Tools</a></li>
-                            <li><a href="#">Tech</a></li>
-                        </ul>
-                    </li>
+                    <li><a href="#">Link</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </nav>

@@ -1,6 +1,6 @@
         <div class="side-bar">
             <div class="side-search content-block-area">
-                <div class="content-title">ブログ内検索</div>
+                <div class="content-title dashed-line">ブログ内検索</div>
                 <div class="side-search-bar">
                     <form action="#" method="get">
                         <input type="text" placeholder="キーワードを入力...">
@@ -13,7 +13,7 @@
                 <div class="side-profile-abstract">25歳元システムエンジニア。フルスタックエンジニアを目指して日々勉強中。</div>
             </div>
             <div class="category-list content-block-area">
-                <div class="content-title">カテゴリー</div>
+                <div class="content-title dashed-line">カテゴリー</div>
                 <nav class="navbar-category">
                     <div>
                         <ul>
@@ -52,7 +52,7 @@
                 </nav>
             </div>
             <div class="side-archive content-block-area">
-                <div class="content-title">アーカイブ</div>
+                <div class="content-title dashed-line">アーカイブ</div>
                 <div class="side-archive-bar">
                     <form action="#" method="get">
                         <select name="archive-select-form">
@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="side-new-article content-block-area">
-                <div class="content-title">新着記事</div>
+                <div class="content-title dashed-line">新着記事</div>
                 <div class="side-content-list">
                     <a href="#" class="side-content-block">
                         <div class="side-content-abstract">

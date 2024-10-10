@@ -27,6 +27,7 @@ body {
     padding: 0;
     margin: 0;
     background-color: var(--color-base);
+    color: var(--color-text);
 
     /* background-image: url("../img/background.gif"); */
 }
@@ -66,10 +67,99 @@ body * {
     box-sizing: border-box;
 }
 
+/* ナビゲーションバー 共通 */
+.navbar {
+    display: flex;
+    align-items: center;
+}
+
+.navbar * {
+    margin: 0;
+}
+
+.navbar div {
+    margin: 0 auto;
+}
+
+.navbar ul {
+    padding: 0;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+/* 要素の下に波線を描画 */
+.wave-line {
+    position: relative;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+
+.wave-line::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    /* svgを使用して波線を描画 */
+    /* パラメータの説明:
+    M0,5: 始点
+    Q6.25,0 12.5,5: 制御点1
+    12.5,5: 制御点2
+    T25,5: 終点
+    fill="transparent": 塗りつぶしなし
+    stroke="black": 線の色
+    stroke-width="1.5": 線の太さ
+    */
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10"><path d="M0,5 Q9.375,0 18.75,5 T37.5,5 M50,5 Q59.375,0 68.75,5 T87.5,5" fill="transparent" stroke="%235D4E72" stroke-width="2"/></svg>') repeat-x;
+}
+
+/* 要素の下に破線を描画 */
+.dashed-line {
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.dashed-line::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    /* 破線をlinear-gradientで描画 */
+    background-image: linear-gradient(to right, var(--color-text) 8px, transparent 4px);
+    background-size: 12px 2px;
+    background-repeat: repeat-x;
+    background-position: right bottom;
+}
+
+
 /* コンテンツ 背景設定 */
 .content-block-area {
     padding: 5px;
 }
+
+/* コンテンツタイトル */
+.content-title {
+    height: 2rem;
+
+    margin: 5px;
+    padding-bottom: 10px;
+
+    line-height: 2.5rem;
+    font-weight: bold;
+    font-size: 1.75rem;
+
+    /* 文字の間隔 */
+    letter-spacing: 0.1em;
+
+    box-sizing: content-box;
+}
+
+
 
 /* 表示設定 */
 .content {
@@ -162,59 +252,6 @@ body * {
 
 
 
-/* 記事一覧 */
-.article-all {
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-/* 記事概要 */
-.article-index {
-    width: 290px;
-    height: auto;
-    padding: 10px 0;
-    box-sizing: border-box;
-}
-
-.article-index a {
-    display: block;
-    background-color: #aaaaaa;
-}
-
-/* 記事概要 記事画像 */
-.article-index-thumbnail img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-}
-
-/* 記事概要 タイトル */
-.article-index-title {
-    margin: 0;
-    color: #000044;
-}
-
-/* 記事概要 記事情報 */
-.article-index .abstract {
-    padding-bottom: 5px;
-}
-
-.article-index .abstract * {
-    margin: 5px;
-}
-
-/* 記事概要 投稿日時 */
-.article-index-date time {
-    opacity: 0.5;
-    font-style: italic;
-}
-
-/* 記事概要 カテゴリ */
-.article-index-category {
-    opacity: 0.5;
-}
 
 
 
@@ -234,22 +271,6 @@ body * {
     margin-bottom: 10px;
 }
 
-/* コンテンツタイトル */
-.content-title {
-    height: 2rem;
-    margin: 5px;
-    padding-bottom: 5px;
-    line-height: 2rem;
-    font-weight: bold;
-    font-size: 1.25rem;
-
-    box-sizing: content-box;
-
-    background-image: linear-gradient(90deg, #0050dd 0 5px, transparent 5px 15px, #808080 15px);
-    background-repeat: no-repeat;
-    background-size: 100% 5px;
-    background-position: bottom;
-}
 
 /* サイドバー プロフィール */
 .side-profile {
