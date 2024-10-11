@@ -60,7 +60,7 @@ header .navbar {
     /* 角を丸くする */
     border-radius: 4px;
     /* アニメーション */
-    transition: all 0.3s;
+    transition: all var(--animation-time-normal);
 }
 
 /* ヘッダー ナビゲーションバー リンク ホバー */
@@ -68,7 +68,7 @@ header .navbar {
     color: var(--color-base);
     background-color: var(--color-text);
     /* アニメーション */
-    transition: all 0.3s;
+    transition: all var(--animation-time-normal);
 }
 
 /* メニュー二段階目 */
@@ -84,7 +84,7 @@ header .navbar {
     min-width: 100%;
     opacity: 0;
     transform: translateY(-20px);
-    transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+    transition: all var(--animation-time-normal);
     flex-direction: column;
     display: flex;
 }

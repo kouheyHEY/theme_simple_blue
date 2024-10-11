@@ -26,12 +26,14 @@
 
 <body>
     <header>
+        <!-- ヘッダータイトル -->
         <div class="header-title">
             <a href="#">
                 <span class="title">No Magic, No Life</span>
                 <span class="title-explanation">説明説明説明説明説明説明説明説明説明説明説明説明。</span>
             </a>
         </div>
+        <!-- ヘッダーメニュー -->
         <nav class="navbar">
             <input type="checkbox" id="menu-btn-check">
             <label for="menu-btn-check" class="menu-btn"><span></span></label>

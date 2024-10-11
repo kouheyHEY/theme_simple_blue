@@ -21,13 +21,33 @@
 
 body {
     /* 変数設定 */
+    /* アクセントカラー */
     --color-accent: #9EC2C2;
+    /* ベースカラー */
     --color-base: #F8F4F2;
+    /* テキストカラー */
     --color-text: #5D4E72;
+    /* アクセントカラー ホバー時 */
+    --color-accent-hover: rgba(158, 194, 194, 0.1);
+    /* ホバー時のベースカラー */
+    --color-base-hover: rgba(248, 244, 242, 0.1);
+
+
+    /* アニメーション方法 */
+    /* 短め 0.3s */
+    --animation-time-short: 0.3s;
+    /* 普通 0.5s */
+    --animation-time-normal: 0.5s;
+    /* 長め 0.8s */
+    --animation-time-long: 0.8s;
+
+    /* 背景色 */
+    background-color: var(--color-base);
+    /* テキストカラー */
+    color: var(--color-text);
+
     padding: 0;
     margin: 0;
-    background-color: var(--color-base);
-    color: var(--color-text);
 
     /* background-image: url("../img/background.gif"); */
 }
@@ -135,7 +155,6 @@ body * {
     background-repeat: repeat-x;
     background-position: right bottom;
 }
-
 
 /* コンテンツ 背景設定 */
 .content-block-area {
