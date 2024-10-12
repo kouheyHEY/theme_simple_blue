@@ -1,0 +1,124 @@
+/* サイドバー */
+.side-bar {
+    width: 300px;
+    padding: 10px;
+    padding-left: 5px;
+    /* background-color: #dddddd; */
+    display: flex;
+    flex-direction: column;
+}
+
+.side-bar .content-block-area {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 10px;
+}
+
+
+/* サイドバー プロフィール */
+.side-profile {
+    padding: 5px;
+    /* background-color: #cccccc; */
+}
+
+.side-profile img {
+    width: 120px;
+    height: 120px;
+    margin: 5px auto 10px;
+    display: block;
+}
+
+.side-profile-abstract {
+    margin: 5px;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+/* サイドバー ブログ内検索 */
+.side-search {}
+
+.side-search-bar form {
+    height: 2.25rem;
+
+    margin: 5px;
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: center;
+    border: solid 2px var(--color-text);
+    border-radius: 5px;
+    position: relative;
+
+    background-color: white;
+}
+
+.side-search-bar input[type="text"] {
+    width: 100%;
+
+    padding: 0 10px;
+
+    outline: 0;
+    border: none;
+    border-radius: initial;
+    cursor: text;
+    background: transparent;
+}
+
+/* 検索ボタン */
+.side-search-bar button {
+    width: 50px;
+
+    border: none;
+    border-radius: initial;
+    cursor: pointer;
+    background: transparent;
+    color: var(--color-text);
+    transition: all var(--animation-time-normal) ease;
+}
+
+/* 検索ボタン ホバー時 */
+.side-search-bar button:hover {
+    background-color: var(--color-text);
+    color: var(--color-base);
+}
+
+/* サイドバー 新着記事 */
+.side-new-article {
+    /* background-color: #cccccc; */
+}
+
+.side-content-list {
+    padding: 5px 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-content-block {
+    margin: 5px;
+    margin-left: 0;
+    display: flex;
+}
+
+.side-content-category {
+    font-size: 0.5rem;
+}
+
+.side-content-img {
+    width: 75px;
+    height: 75px;
+}
+
+.side-content-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.side-content-article-title {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.side-content-abstract {
+    width: calc(100% - 75px);
+}

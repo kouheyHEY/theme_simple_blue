@@ -4,8 +4,40 @@ footer {
     color: #ffffff;
     display: flex;
     flex-direction: column;
+
+    /* フッター内の破線 */
+    .dashed-line::after {
+        background-image: linear-gradient(to right, var(--color-base) 8px, transparent 4px);
+    }
 }
 
+/* フッター 記事マップ */
+.footer-article-map {
+    width: 960px;
+    margin: 0 auto;
+
+    /* 内容を横並びにする */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* フッター アーカイブ */
+.archive-list {
+    width: 320px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* フッター カテゴリ */
+.category-list {
+    width: 320px;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* フッター 情報 */
 .footer-info-area {
     width: 960px;
     margin: 0 auto;
@@ -14,31 +46,32 @@ footer {
 /* フッター タイトル */
 .footer-title {
     padding: 10px;
-}
 
-.footer-title a {
-    width: 400px;
-    margin: 0 auto;
-    font-size: 2rem;
-    text-align: center;
-    display: block;
-}
+    & a {
+        width: 400px;
+        margin: 0 auto;
+        font-size: 2rem;
+        text-align: center;
+        display: block;
+    }
 
-.footer-title span {
-    color: #ffffff;
+    & span {
+        color: #ffffff;
+    }
+
 }
 
 /* フッター リンクリスト */
 .footer-link-list {
     width: 240px;
     margin: 10px auto;
+
+    & a {
+        color: #ffffff;
+    }
 }
 
-.footer-link-list a {
-    color: #ffffff;
-}
-
-.footer-siteMap {
+.footer-link-list .footer-siteMap {
     width: 120px;
     padding: 0 10px;
     border-right: 1px solid #ffffff;

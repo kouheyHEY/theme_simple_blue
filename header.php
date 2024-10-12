@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/header.css">
     <!-- 記事CSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/article.css">
+    <!-- サイドバーCSS -->
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/sidebar.css">
     <!-- フッターCSS -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/footer.css">
     <!-- jQuery -->
