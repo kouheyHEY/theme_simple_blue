@@ -14,7 +14,6 @@
     margin-bottom: 10px;
 }
 
-
 /* サイドバー プロフィール */
 .side-profile {
     padding: 5px;
@@ -36,6 +35,10 @@
 
 /* サイドバー ブログ内検索 */
 .side-search {}
+
+.side-search-bar {
+    padding: 5px;
+}
 
 .side-search-bar form {
     height: 2.25rem;
@@ -82,43 +85,81 @@
     color: var(--color-base);
 }
 
+/* サイドバー プロフィール SNSリンク */
+.side-profile-sns {
+    margin: 5px;
+    margin-left: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    .sns-link {
+        width: calc(100% / 2);
+        padding: 5px;
+        box-sizing: border-box;
+
+        & a {
+            width: 100%;
+            padding: 5px;
+            text-align: center;
+            border-radius: 4px;
+            display: block;
+            transition: all var(--animation-time-normal) ease;
+        }
+
+        /* ホバー時 */
+        & a:hover {
+            transform: scale(0.90);
+            color: #ffffff;
+        }
+
+        & a::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            border-radius: 4px;
+            transition: all var(--animation-time-normal) ease;
+            background: var(--color-base);
+        }
+
+        & a::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            z-index: -2;
+            left: 0;
+            top: 0;
+            border-radius: 4px;
+        }
+
+        & a:hover::before {
+            opacity: 0;
+        }
+    }
+
+    #link-instagram a::after {
+        /* 左上から右下に45度で4色のグラデーション */
+        background: linear-gradient(to bottom right, #741AFA, #FF30C4, #FF5D21, #FFD735);
+    }
+}
+
 /* サイドバー 新着記事 */
 .side-new-article {
-    /* background-color: #cccccc; */
-}
+    .article-index {
+        height: 80px;
+    }
 
-.side-content-list {
-    padding: 5px 10px;
-    display: flex;
-    flex-direction: column;
-}
+    .article-index-title {
+        font-size: 0.875rem;
+    }
 
-.side-content-block {
-    margin: 5px;
-    margin-left: 0;
-    display: flex;
-}
-
-.side-content-category {
-    font-size: 0.5rem;
-}
-
-.side-content-img {
-    width: 75px;
-    height: 75px;
-}
-
-.side-content-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.side-content-article-title {
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-.side-content-abstract {
-    width: calc(100% - 75px);
+    .article-index-info {
+        font-size: 0.625rem;
+    }
 }

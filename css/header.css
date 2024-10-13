@@ -65,51 +65,9 @@ header .navbar {
 
 /* ヘッダー ナビゲーションバー リンク ホバー */
 .header-navbar a:hover {
+    transform: scale(0.9);
     color: var(--color-base);
     background-color: var(--color-text);
     /* アニメーション */
     transition: all var(--animation-time-normal);
 }
-
-/* メニュー二段階目 */
-.navbar .has-submenu {
-    position: relative;
-}
-
-.navbar .submenu {
-    visibility: hidden;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 100%;
-    opacity: 0;
-    transform: translateY(-20px);
-    transition: all var(--animation-time-normal);
-    flex-direction: column;
-    display: flex;
-}
-
-.navbar .has-submenu .submenu.active {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-
-.navbar .submenu li {
-    /* 上に余白を追加 */
-    padding-top: 10px;
-    display: block;
-}
-
-.navbar .submenu a {
-    color: var(--color-base);
-    background-color: var(--color-text);
-    display: block;
-}
-
-/* 子メニュー ホバー */
-/* .navbar .submenu a:hover {
-    color: var(--color-text);
-    background-color: var(--color-base);
-} */

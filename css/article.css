@@ -1,6 +1,6 @@
 /* 記事一覧 */
 .article-all {
-    padding: 10px;
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -27,7 +27,7 @@
 /* ホバー時の効果を追加 */
 .article-index:hover {
     /* 要素を少し小さくする */
-    transform: scale(0.98);
+    transform: scale(0.95);
 }
 
 .article-index>a>div {
@@ -63,12 +63,13 @@
 
 /* 記事概要 タイトル */
 .article-index-title {
-    margin: 10px;
+    margin: 10px 5px 0px;
+    font-size: 1.25rem;
 }
 
 /* 記事概要 記事情報 */
 .article-index-info {
-    margin: 10px;
+    margin: 0px 5px 10px;
     display: flex;
     justify-content: space-between;
 }

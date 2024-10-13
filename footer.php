@@ -4,10 +4,60 @@
             <!-- アーカイブ一覧 -->
             <div class="archive-list content-block-area">
                 <div class="content-title dashed-line">アーカイブ</div>
+                <!-- 年別、月別に表示 -->
+                <div class="list-content">
+                    <div class="category-large">
+                        <a href="#">2024年</a>
+                    </div>
+                    <div class="category-small-list">
+                        <div class="category-small"><a href="#">1月</a></div>
+                        <div class="category-small"><a href="#">2月</a></div>
+                        <div class="category-small"><a href="#">3月</a></div>
+                        <div class="category-small"><a href="#">4月</a></div>
+                        <div class="category-small"><a href="#">5月</a></div>
+                        <div class="category-small"><a href="#">6月</a></div>
+                        <div class="category-small"><a href="#">7月</a></div>
+                    </div>
+                </div>
+                <div class="list-content">
+                    <div class="category-large">
+                        <a href="#">2023年</a>
+                    </div>
+                    <div class="category-small-list">
+                        <div class="category-small"><a href="#">1月</a></div>
+                        <div class="category-small"><a href="#">2月</a></div>
+                        <div class="category-small"><a href="#">3月</a></div>
+                        <div class="category-small"><a href="#">4月</a></div>
+                        <div class="category-small"><a href="#">5月</a></div>
+                        <div class="category-small"><a href="#">6月</a></div>
+                        <div class="category-small"><a href="#">7月</a></div>
+                    </div>
+                </div>
             </div>
             <!-- カテゴリ一覧 -->
             <div class="category-list content-block-area">
                 <div class="content-title dashed-line">カテゴリ</div>
+                <!-- カテゴリごとに表示 -->
+                <div class="list-content">
+                    <div class="category-large">
+                        <a href="#">Lifestyle</a>
+                    </div>
+                    <div class="category-small-list">
+                        <div class="category-small"><a href="#">Themepark</a></div>
+                        <div class="category-small"><a href="#">Travel</a></div>
+                        <div class="category-small"><a href="#">Diary</a></div>
+                    </div>
+                </div>
+                <div class="list-content">
+                    <div class="category-large">
+                        <a href="#">Lifestyle2</a>
+                    </div>
+                    <div class="category-small-list">
+                        <div class="category-small"><a href="#">Themepark</a></div>
+                        <div class="category-small"><a href="#">Travel</a></div>
+                        <div class="category-small"><a href="#">Diary</a></div>
+                    </div>
+                </div>
             </div>
         </div>
         <!-- フッター情報 -->
@@ -20,37 +70,31 @@
             </div>
             <!-- フッターリンク -->
             <nav class="navbar footer-link-list">
-                <div>
-                    <ul>
-                        <li class="footer-siteMap">
-                            <a href="#">
-                                <div>
-                                    サイトマップ
-                                </div>
-                            </a>
-                        </li>
-                        <li class="footer-contact">
-                            <a href="#">
-                                <div>
-                                    お問い合わせ
-                                </div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <ul>
+                    <li id="footer-siteMap">
+                        <a href="#">
+                            サイトマップ
+                        </a>
+                    </li>
+                    <li id="footer-links">
+                        <a href="#">
+                            リンク
+                        </a>
+                    </li>
+                    <li id="footer-contact">
+                        <a href="#">
+                            お問い合わせ
+                        </a>
+                    </li>
+                </ul>
             </nav>
             <!-- アイコンリスト -->
             <nav class="navbar footer-icon-list">
                 <div>
                     <ul>
                         <li>
-                            <div class="footer-twitter-icon">
-                                <img src="img/icon_twitter.png" alt="twitterアイコン">
-                            </div>
-                        </li>
-                        <li>
-                            <div class="footer-youtube-icon">
-                                <img src="img/icon_youtube.png" alt="youtubeアイコン">
+                            <div id="footer-instagram-icon">
+                                <img src="img/icon_instagram.png" alt="instagramアイコン">
                             </div>
                         </li>
                     </ul>

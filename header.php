@@ -21,9 +21,6 @@
     <?php wp_enqueue_script('jquery'); ?>
     <!-- WordPressのヘッダー情報 -->
     <?php wp_head(); ?>
-
-    <!-- ヘッダーメニューの表示用js -->
-    <script src="<?php echo get_template_directory_uri(); ?>/js/header-menu.js"></script>
 </head>
 
 <body>
@@ -41,23 +38,11 @@
             <label for="menu-btn-check" class="menu-btn"><span></span></label>
             <div class="header-navbar">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li class="has-submenu">
-                        <a href="#">Lifestyle</a>
-                        <ul class="submenu">
-                            <li><a href="#">Themepark</a></li>
-                            <li><a href="#">Diary</a></li>
-                        </ul>
-                    </li>
-                    <li class="has-submenu">
-                        <a href="#">Review</a>
-                        <ul class="submenu">
-                            <li><a href="#">Cosmetic</a></li>
-                            <li><a href="#">Other</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Link</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="<?php echo home_url( '/front-page' ); ?>">Home</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Recommend</a></li>
+                    <li><a href="<?php echo home_url( '/links' ); ?>">Link</a></li>
+                    <li><a href="<?php echo home_url( '/contact' ); ?>">Contact</a></li>
                 </ul>
             </div>
         </nav>

@@ -8,15 +8,6 @@
         <!-- コンテンツブロック -->
         <div class="content-block-area">
             <div class="content-title dashed-line">大カテゴリ名</div>
-            <!-- <nav class="navbar">
-                <div class="main-navbar">
-                    <ul>
-                        <li><a href="new"><span>新着記事</span></a></li>
-                        <li><a href="recommend"><span>オススメ</span></a></li>
-                        <li><a href="ranking"><span>ランキング</span></a></li>
-                    </ul>
-                </div>
-            </nav> -->
             <!-- 記事一覧 -->
             <div class="article-all">
                 <!-- 記事ブロック -->

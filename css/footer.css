@@ -1,14 +1,9 @@
 /* フッター 共通設定 */
 footer {
-    background-color: #191970;
-    color: #ffffff;
+    background-color: var(--color-accent);
+    color: var(--color-text);
     display: flex;
     flex-direction: column;
-
-    /* フッター内の破線 */
-    .dashed-line::after {
-        background-image: linear-gradient(to right, var(--color-base) 8px, transparent 4px);
-    }
 }
 
 /* フッター 記事マップ */
@@ -21,20 +16,61 @@ footer {
     justify-content: space-evenly;
 }
 
-/* フッター アーカイブ */
-.archive-list {
-    width: 320px;
+/* フッター アーカイブ、カテゴリ */
+.archive-list,
+.category-list {
+    width: 50%;
     margin: 5px;
     display: flex;
     flex-direction: column;
+
+    & .list-content {
+        margin: 5px;
+    }
 }
 
-/* フッター カテゴリ */
-.category-list {
-    width: 320px;
+/* フッター 大カテゴリ */
+.category-large {
     margin: 5px;
+    font-size: 1.25rem;
+
+}
+
+/* フッター 小カテゴリリスト */
+.category-small-list {
+    margin: 5px;
+    margin-left: 10px;
+
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+/* フッター 小カテゴリ */
+.category-small {
+    width: calc(100% / 6);
+
+    padding: 5px;
+
+    box-sizing: border-box;
+
+    & a {
+        width: 100%;
+        padding: 5px;
+        border-radius: 4px;
+        display: block;
+        transition: all var(--animation-time-normal) ease;
+    }
+}
+
+/* ホバー時 */
+.category-small a:hover {
+    transform: scale(0.90);
+    color: var(--color-base);
+    background-color: var(--color-text);
+}
+
+.category-list .category-small {
+    width: calc(100% / 3);
 }
 
 /* フッター 情報 */
@@ -55,33 +91,26 @@ footer {
         display: block;
     }
 
-    & span {
-        color: #ffffff;
-    }
-
 }
 
 /* フッター リンクリスト */
 .footer-link-list {
-    width: 240px;
+    width: 400px;
     margin: 10px auto;
-
-    & a {
-        color: #ffffff;
-    }
 }
 
-.footer-link-list .footer-siteMap {
-    width: 120px;
-    padding: 0 10px;
-    border-right: 1px solid #ffffff;
-    box-sizing: border-box;
+.footer-link-list ul {
+    margin: 0 auto;
 }
 
-.footer-contact {
-    width: 120px;
-    padding: 0 10px;
-    box-sizing: border-box;
+.footer-link-list li {
+    width: auto;
+    padding: 0 5px;
+    border-right: 1px solid var(--color-text);
+}
+
+.footer-link-list li:last-child {
+    border-right: none;
 }
 
 /* フッター アイコン一覧 */
@@ -96,4 +125,33 @@ footer {
     margin: 30px auto 10px;
     text-align: center;
     font-size: 0.8em;
+}
+
+/* フッター トップへ戻るボタン */
+.gotoTop {
+    position: relative;
+}
+
+#topButton {
+    width: 60px;
+    height: 60px;
+    background-color: var(--color-accent);
+    border-radius: 40px;
+
+    display: block;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+}
+
+#topButton div {
+    width: 16px;
+    height: 16px;
+    border-left: 4px solid var(--color-base);
+    border-top: 4px solid var(--color-base);
+
+    position: absolute;
+    top: 26px;
+    left: 22px;
+    transform: rotate(45deg);
 }
