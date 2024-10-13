@@ -18,7 +18,7 @@
     transition: all var(--animation-time-normal) ease;
 }
 
-.article-index>a {
+.article-index .anchor-wrapper {
     height: 100%;
     display: flex;
     align-items: flex-start;
@@ -30,7 +30,7 @@
     transform: scale(0.95);
 }
 
-.article-index>a>div {
+.article-index>.anchor-wrapper>div {
     /* 画像とその他を横並びで配置 */
     height: 100%;
 }
@@ -38,7 +38,7 @@
 /* 記事概要 記事画像 */
 .article-index-thumbnail {
     width: 35%;
-    height: auto;
+    height: 100%;
     padding: 5px;
 }
 

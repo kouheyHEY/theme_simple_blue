@@ -161,6 +161,11 @@ body * {
     padding: 5px;
 }
 
+/* コンテンツブロック内の要素にパディングを追加 */
+.content-block-area>* {
+    padding: 5px;
+}
+
 /* コンテンツタイトル */
 .content-title {
     height: 2rem;
@@ -178,13 +183,21 @@ body * {
     box-sizing: content-box;
 }
 
+/* アンカーラッパー */
+.anchor-wrapper {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 
 
 /* 表示設定 */
 .content {
     width: 960px;
     height: auto;
-    margin: 0 auto;
+
+    margin: 0 auto 60px;
     padding: 0;
     box-sizing: border-box;
     display: flex;
