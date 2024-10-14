@@ -282,7 +282,10 @@ body * {
     border-color: #0050dd;
 }
 
-
+/* ページネーション */
+.pagination {
+    width: 100%;
+}
 
 
 

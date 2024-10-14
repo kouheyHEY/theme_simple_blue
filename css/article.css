@@ -89,3 +89,13 @@
 .article-index-category {
     opacity: 0.5;
 }
+
+/* カテゴリパス */
+.category-path {
+    margin: 10px 5px 5px;
+    line-height: 1.5rem;
+
+    & a {
+        font-size: 1.25rem;
+    }
+}

@@ -95,7 +95,7 @@
     justify-content: center;
 
     .sns-link {
-        width: calc(100% / 2);
+        width: 100%;
         padding: 5px;
         box-sizing: border-box;
 

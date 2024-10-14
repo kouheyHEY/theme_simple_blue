@@ -15,7 +15,7 @@
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/プロフィールテスト.png" alt="プロフィール画像">
         <div class="side-profile-abstract">20代元エンジニア。現在は事務職として働く傍らブログ執筆をのんびりやっています。</div>
         <div class="side-profile-sns">
-            <div class="sns-link" id="link-instagram"><a href="#">Instagram</a></div>
+            <div class="sns-link" id="link-instagram"><a href="#">Follow Instagram</a></div>
         </div>
     </div>
     <!-- 新着記事 -->
